@@ -2,8 +2,11 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<title>Jadoo</title>
 		<meta name="format-detection" content="telephone=no">
-		<!--<link rel="stylesheet" href="style.css">-->
+		<link rel="stylesheet" href="./src/style/style.css">
+		<link rel="stylesheet" href="./scss/fonts/poppins.css">
+		<link rel="stylesheet" href="./scss/fonts/volkhov.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
@@ -15,8 +18,7 @@
 						<img src="src/img/logo.svg" alt="Logo">
 					</a>
 					<div class="header__menu menu">
-						<button type="button" class="menu__icon icon-menu"><span></span></button>
-						<nav class="menu__body">
+							<nav class="menu__body">
 							<ul class="menu__list">
 								<li class="menu__item"><a href="" class="menu__link">Desitnations</a></li>
 								<li class="menu__item"><a href="" class="menu__link">Hotels</a></li>
@@ -26,7 +28,7 @@
 							<div class="menu__action action-header">
 								<button class="action-header__login" type="button">Login</button>
 								<button class="action-header__sign-up" type="button">Sign up</button>
-								<select name="form[]" data-class-modif="lang">
+								<select name="form[]" style="background: transparent;">
 									<option value="1" selected>EN</option>
 									<option value="2">UA</option>
 									
@@ -41,24 +43,25 @@
 					<div class="main__container">
 						<div class="main__body">
 							<div class="main__label">Best Destinations around the world</div>
-							<h1 class="main__title">Travel, <span>enjoy</span> and live a new and full life</h1>
+							<h1 class="main__title">Travel, enjoy and live a new <br>and full life</h1>
 							<div class="main__text">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</div>
 							<div class="main__actions">
 								<a href="" class="main__button">Find out more</a>
-								<button type="button" class="main__play _icon-play"> Play Demo</button>
+								<button type="button" class="main__play _icon-play"> <img src="./src/img/main/play.png" alt="play">	<p> Play Demo</p> </button>
 								
 							</div>
 						</div>
 						<div class="main__media media-main">
-							<div data-prlx-mouse class="media-main__plane media-main__plane_1">
+						<div class="media-main__plane media-main__plane_1">
 								<img src="src/img/main/plane.svg" alt="plane">
 							</div>
-							<div data-prlx-mouse class="media-main__plane media-main__plane_2">
+							
+							<div class="media-main__plane media-main__plane_2">
 								<img src="src/img/main/plane.svg" alt="plane">
 							</div>
-							<div data-prlx-mouse class="media-main__image">
+							<div class="media-main__image">
 								<img src="src/img/main/girl.png" alt="Girl">
-							</div>
+							</div>			
 						</div>
 					</div>
 				</section>
@@ -145,7 +148,7 @@
 						<div class="steps__content">
 							<div class="steps__header header-block">
 								<div class="header-block__label">Easy and Fast</div>
-								<h2 class="header-block__title">Book your next trip in 3 easy steps</h2>
+								<h2 class="header-block__title">Book your next trip <br> in 3 easy steps</h2>
 							</div>
 							<div class="steps__items">
 								<div class="steps__item item-step">
@@ -189,13 +192,13 @@
 										<div class="info-card__org">by Robbin joseph</div>
 									</div>
 									<div class="info-card__actions actions-info-card">
-										<a href="" class="actions-info-card__item _icon-leaf"></a>
-										<a href="" class="actions-info-card__item _icon-map"></a>
-										<a href="" class="actions-info-card__item _icon-location"></a>
+										<a href="" class="actions-info-card__item _icon-leaf"> <img src="./src/img/steps/icons/leaf.svg" alt="leaf"> </a>
+										<a href="" class="actions-info-card__item _icon-map"><img src="./src/img/steps/icons/map.svg" alt="map"></a>
+										<a href="" class="actions-info-card__item _icon-location"><img src="./src/img/steps/icons/send.svg" alt="send"></a>
 									</div>
 									<div class="info-card__footer">
 										<div class="info-card__people _icon-house">24 people going</div>
-										<button type="button" data-tippy-ongoing class="info-card__favorite _icon-favorite"></button>
+										<button type="button"><img src="./src/img/steps/heart.svg" alt="heart"></button>
 									</div>
 									<div id="ongoing" class="info-card__ongoing">
 										<div class="ongoing-info-card">
@@ -228,13 +231,9 @@
 								<div class="header-block__label header-block__label_up">Testimonials</div>
 								<h2 class="header-block__title">What people say about Us.</h2>
 							</div>
-							<div data-da=".testimonials__body, 991.98" class="testimonials__gotts"></div>
 						</div>
-						<div class="testimonials__body">
-							<!-- Оболочка слайдера -->
-							<div class="testimonials__slider swiper">
-									<!-- Слайд -->
-									<div class="testimonials__slide swiper-slide">
+					<div class="testimonials__body">
+										<div class="testimonials__slide swiper-slide">
 										<div class="slide-testimonials">
 											<div class="slide-testimonials__avatar">
 												<img src="src/img/testimonials/avatar.jpg" alt="Ava">
@@ -243,7 +242,6 @@
 											<div class="slide-testimonials__name">Mike taylor</div>
 											<div class="slide-testimonials__position">Lahore, Pakistan</div>
 										</div>
-									</div>
 							</div>
 						</div>
 					</div>
@@ -251,31 +249,32 @@
 				<div class="page__clients clients">
 					<div class="clients__container">
 						<div class="clients__items">
-							<a href="" class="clients__item">
-								<img src="src/img/clients/01.jpg" alt="">
+							<a href="http://www.axonaviation.com/" class="clients__item">
+								<img src="src/img/clients/01.jpg" alt="Axon company">
 							</a>
-							<a href="" class="clients__item">
-								<img src="src/img/clients/02.jpg" alt="">
+							<a href="https://www.jetstar.com/au/en/home?adults=1&children=0&flexible=1&flight-type=2&infants=0&origin=MEL&tab=1" class="clients__item">
+								<img src="src/img/clients/02.jpg" alt="Jetstar company">
 							</a>
-							<a href="" class="clients__item">
-								<img src="src/img/clients/03.jpg" alt="">
+							<a href="https://www.expedia.com/" class="clients__item">
+								<img src="src/img/clients/03.jpg" alt="Expedia company">
 							</a>
-							<a href="" class="clients__item">
-								<img src="src/img/clients/04.jpg" alt="">
+							<a href="https://www.qantas.com/au/en.html" class="clients__item">
+								<img src="src/img/clients/04.jpg" alt="Qantas company">
 							</a>
-							<a href="" class="clients__item">
-								<img src="src/img/clients/05.jpg" alt="">
+							<a href="https://www.kiwi.com/" class="clients__item">
+								<img src="src/img/clients/05.jpg" alt="Alitalia company">
 							</a>
 						</div>
 					</div>
 				</div>
 				<section class="page__subscribe subscribe">
-					<div class="subscribe__container">
+						<div class="subscribe__container"> 
+						<img src="./src/img/subscribe/icon.svg" alt="" style="transform: translateX(1600%) translateY(80%);">
 						<div class="subscribe__body">
 							<h2 class="subscribe__title">Subscribe to get information, latest news and other interesting offers about Jadoo</h2>
-							<form data-dev data-popup-message="#popup-message" action="#" method="GET" class="subscribe__form">
-								<div class="subscribe__input _icon-email">
-									<input data-required="email" autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Your email" class="input">
+							<form class="subscribe__form">
+								<div class="subscribe__input _icon-email"> 
+									<input data-required="email" autocomplete="on" type="text" name="form[]" placeholder="Your email" class="input">
 								</div>
 								<button type="submit" class="subscribe__button">Subscribe</button>
 							</form>
@@ -293,9 +292,9 @@
 							<p>Control for much longer.</p>
 						</div>
 					</div>
-					<nav data-spollers="500,max" class="footer__menu menu-footer">
+					<nav class="footer__menu menu-footer">
 						<div class="menu-footer__column">
-							<button type="button" data-spoller class="menu-footer__title">Company</button>
+							<button type="button" class="menu-footer__title">Company</button>
 							<ul class="menu-footer__list">
 								<li class="menu-footer__item">
 									<a href="" class="menu-footer__link">About</a>
@@ -309,7 +308,7 @@
 							</ul>
 						</div>
 						<div class="menu-footer__column">
-							<button type="button" data-spoller class="menu-footer__title">Contact</button>
+							<button type="button" class="menu-footer__title">Contact</button>
 							<ul class="menu-footer__list">
 								<li class="menu-footer__item">
 									<a href="" class="menu-footer__link">Help/FAQ</a>
@@ -323,7 +322,7 @@
 							</ul>
 						</div>
 						<div class="menu-footer__column">
-							<button type="button" data-spoller class="menu-footer__title">More</button>
+							<button type="button" class="menu-footer__title">More</button>
 							<ul class="menu-footer__list">
 								<li class="menu-footer__item">
 									<a href="" class="menu-footer__link">Airlinefees</a>
@@ -340,7 +339,7 @@
 					<div class="footer__actions">
 						<div class="footer__social social-footer">
 							<a href="https://www.facebook.com/" class="social-footer__item _icon-fb"><img src="src/img/footer/facebook.svg" alt="facebook"></a>
-							<a href="https://www.instagram.com/" class="social-footer__item _icon-inst"><img src="src/img/footer/inst.png" alt="instagram"></a>
+							<a href="https://www.instagram.com/" class="social-footer__item _icon-inst"><img src="src/img/footer/inst.svg" alt="instagram" style="background: conic-gradient(from 180deg,#B8D2F1,#F289AA, #C68BF0, #D164DA, #C963E8,#BFC2E8,#FFC999); border-radius: 50%;width: 40px;"></a>
 							<a href="https://www.twitter.com/" class="social-footer__item _icon-tw"><img src="src/img/footer/twitter.svg" alt="twitter"></a>
 						</div>
 						<div class="footer__app app-footer">

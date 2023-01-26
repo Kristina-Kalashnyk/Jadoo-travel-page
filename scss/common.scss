@@ -1,0 +1,23 @@
+.header-block {
+	// .header-block__label
+	&__label {
+		font-size: rem(18);
+		line-height: math.div(27, 18);
+		font-weight: 600;
+		&:not(:last-child) {
+			margin-bottom: rem(10);
+		}
+		// .header-block__label_up
+		&_up {
+			text-transform: uppercase;
+		}
+	}
+	// .header-block__title
+	&__title {
+		color: $darkColor;
+		line-height: math.div(64,50);
+		font-family: "Volkhov";
+		text-transform: capitalize;
+		font-size: rem(50);
+	}
+}
